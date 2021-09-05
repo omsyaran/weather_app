@@ -6,7 +6,7 @@ import 'dart:convert';
 
 Future<WeatherInfo> fetchWeather () async {
   final zipCode = "48000";
-  final apiKey = "73a4d50168e41f42b06c18890b83b166";
+  final apiKey = ""; // insert the API key over here
   final requestUrl = "http://api.openweathermap.org/data/2.5/weather?zip=${zipCode},my&units=imperial&appid=${apiKey}";
 
   final response = await http.get(Uri.parse(requestUrl));
